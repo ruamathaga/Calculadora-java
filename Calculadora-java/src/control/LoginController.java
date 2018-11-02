@@ -29,7 +29,7 @@ import model.Usuario;
 /**
  * FXML Controller class
  *
- * @author 04046001232
+ * @author Ruama
  */
 public class LoginController implements Initializable {
 
