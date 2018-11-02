@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="271.0" prefWidth="519.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.CalculadoraController">
+   <children>
+      <ImageView fitHeight="488.0" fitWidth="519.0" opacity="0.74" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/fundo.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtN1" layoutX="72.0" layoutY="59.0" />
+      <TextField fx:id="txtN2" layoutX="72.0" layoutY="99.0" />
+      <TextField fx:id="txtResultado" layoutX="72.0" layoutY="160.0" />
+      <Button layoutX="324.0" layoutY="60.0" mnemonicParsing="false" onAction="#soma" prefHeight="48.0" prefWidth="61.0" text="+" />
+      <Button layoutX="406.0" layoutY="136.0" mnemonicParsing="false" onAction="#divide" prefHeight="48.0" prefWidth="61.0" text="/" />
+      <Button layoutX="406.0" layoutY="60.0" mnemonicParsing="false" onAction="#menos" prefHeight="48.0" prefWidth="61.0" text="-" />
+      <Button layoutX="324.0" layoutY="136.0" mnemonicParsing="false" onAction="#vezes" prefHeight="48.0" prefWidth="61.0" text="*" />
+      <MenuBar prefHeight="25.0" prefWidth="519.0">
+        <menus>
+          <Menu mnemonicParsing="false" onAction="#Historico" text="Historico">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Historico" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.cell.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="344.0" prefWidth="457.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="control.HistoricoController">
+   <children>
+      <TableView fx:id="tbHistorico" layoutX="21.0" layoutY="34.0" prefHeight="200.0" prefWidth="423.0">
+        <columns>
+            
+          <TableColumn prefWidth="101.0" text="ID">
+              <cellValueFactory>
+                  <PropertyValueFactory property="id" />
+              </cellValueFactory>
+          </TableColumn>
+          
+          <TableColumn prefWidth="101.0" text="Primeiro Valor">
+              <cellValueFactory>
+                  <PropertyValueFactory property="n1" />
+              </cellValueFactory>
+          </TableColumn>
+          
+          <TableColumn prefWidth="101.0" text="Segundo Valor">
+              <cellValueFactory>
+                  <PropertyValueFactory property="n2" />
+              </cellValueFactory>
+          </TableColumn>
+          
+          <TableColumn prefWidth="101.0" text="Operação">
+              <cellValueFactory>
+                  <PropertyValueFactory property="operacao" />
+              </cellValueFactory>
+          </TableColumn>
+          <TableColumn prefWidth="101.0" text="Resultado">
+              <cellValueFactory>
+                  <PropertyValueFactory property="resultado" />
+              </cellValueFactory>
+          </TableColumn>
+
+        </columns>
+      </TableView>
+      <Button fx:id="btnVoltar" layoutX="104.0" layoutY="268.0" mnemonicParsing="false" onAction="#Voltar" text="Voltar" />
+      <Button fx:id="btnFechar" layoutX="284.0" layoutY="268.0" mnemonicParsing="false" onAction="#Fechar" text="Fechar" />
+   </children>
+</AnchorPane>
